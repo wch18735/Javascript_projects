@@ -199,9 +199,10 @@ nav {
   display: none;
 }
 .links {
-  /* height: 0;
+  /* height 0 and make overflow things hidden*/
+  height: 0;
   overflow: hidden;
-  transition: var(--transition); */
+  transition: var(--transition);
 }
 .show-links {
   height: 10rem;
@@ -222,6 +223,7 @@ nav {
     display: none;
   }
   .links {
+    /* need to show when hidden mode */
     height: auto;
     display: flex;
   }
