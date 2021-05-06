@@ -33,8 +33,18 @@ const items = document.querySelectorAll('.deadline-format h4')
 // let tmpDay = tmpDate.getDate();
 // const futureDate = new Date(tmpYear, tmpMonth, tmpDay + 10, 11, 30, 0);
 
+// If you want to exact this application with 10 sec left
+let tmpDate = new Date();
+let tmpYear = tmpDate.getFullYear();
+let tmpMonth = tmpDate.getMonth();
+let tmpDay = tmpDate.getDate();
+let tmpHour = tmpDate.getHours();
+let tmpMin = tmpDate.getMinutes();
+let tmpSec = tmpDate.getSeconds();
+let futureDate = new Date(tmpYear, tmpMonth, tmpDay, tmpHour, tmpMin, tmpSec + 10);
+
 // months are zero index base
-let futureDate = new Date(2021, 4, 10, 13, 30, 0);
+// let futureDate = new Date(2021, 4, 10, 13, 30, 0);
 
 const year = futureDate.getFullYear();
 const month = months[futureDate.getMonth()];
