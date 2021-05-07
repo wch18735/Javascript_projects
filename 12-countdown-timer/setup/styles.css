@@ -156,6 +156,7 @@ p {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+
 /* section */
 .section {
   padding: 5rem 0;
